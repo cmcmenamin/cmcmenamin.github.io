@@ -1,0 +1,297 @@
+/* Libre Caslon Text */
+
+@font-face {
+    font-family: 'Libre Caslon Text';
+    src: url('../fonts/LibreCaslon/LibreCaslonText-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Libre Caslon Text';
+    src: url('../fonts/LibreCaslon/LibreCaslonText-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Libre Caslon Text';
+    src: url('../fonts/LibreCaslon/LibreCaslonText-Italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Libre Caslon Display */
+
+@font-face {
+    font-family: 'Libre Caslon Display';
+    src: url('../fonts/LibreCaslon/LibreCaslonDisplay-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Atkinson Hyperlegible */
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible';
+    src: url('../fonts/AtkinsonHyperlegible/Atkinson-Hyperlegible-Regular-102a.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible';
+    src: url('../fonts/AtkinsonHyperlegible/Atkinson-Hyperlegible-Italic-102a.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible';
+    src: url('../fonts/AtkinsonHyperlegible/Atkinson-Hyperlegible-Bold-102a.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible';
+    src: url('../fonts/AtkinsonHyperlegible/Atkinson-Hyperlegible-BoldItalic-102a.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Atkinson Hyperlegible Mono */
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Mono';
+    src: url('../fonts/AtkinsonHyperlegible/AtkinsonHyperlegibleMono-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Mono';
+    src: url('../fonts/AtkinsonHyperlegible/AtkinsonHyperlegibleMono-ExtraLightItalic.woff2') format('woff2');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Mono';
+    src: url('../fonts/AtkinsonHyperlegible/AtkinsonHyperlegibleMono-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Mono';
+    src: url('../fonts/AtkinsonHyperlegible/AtkinsonHyperlegibleMono-LightItalic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Mono';
+    src: url('../fonts/AtkinsonHyperlegible/AtkinsonHyperlegibleMono-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Mono';
+    src: url('../fonts/AtkinsonHyperlegible/AtkinsonHyperlegibleMono-RegularItalic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Mono';
+    src: url('../fonts/AtkinsonHyperlegible/AtkinsonHyperlegibleMono-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Mono';
+    src: url('../fonts/AtkinsonHyperlegible/AtkinsonHyperlegibleMono-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Mono';
+    src: url('../fonts/AtkinsonHyperlegible/AtkinsonHyperlegibleMono-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Mono';
+    src: url('../fonts/AtkinsonHyperlegible/AtkinsonHyperlegibleMono-SemiBoldItalic.woff2') format('woff2');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Mono';
+    src: url('../fonts/AtkinsonHyperlegible/AtkinsonHyperlegibleMono-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Mono';
+    src: url('../fonts/AtkinsonHyperlegible/AtkinsonHyperlegibleMono-BoldItalic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Mono';
+    src: url('../fonts/AtkinsonHyperlegible/AtkinsonHyperlegibleMono-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Mono';
+    src: url('../fonts/AtkinsonHyperlegible/AtkinsonHyperlegibleMono-ExtraBoldItalic.woff2') format('woff2');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Atkinson Hyperlegible Next */
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    src: url('../fonts/AtkinsonHyperlegible/AtkinsonHyperlegibleNext-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    src: url('../fonts/AtkinsonHyperlegible/AtkinsonHyperlegibleNext-ExtraLightItalic.woff2') format('woff2');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    src: url('../fonts/AtkinsonHyperlegible/AtkinsonHyperlegibleNext-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    src: url('../fonts/AtkinsonHyperlegible/AtkinsonHyperlegibleNext-LightItalic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    src: url('../fonts/AtkinsonHyperlegible/AtkinsonHyperlegibleNext-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    src: url('../fonts/AtkinsonHyperlegible/AtkinsonHyperlegibleNext-RegularItalic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    src: url('../fonts/AtkinsonHyperlegible/AtkinsonHyperlegibleNext-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    src: url('../fonts/AtkinsonHyperlegible/AtkinsonHyperlegibleNext-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    src: url('../fonts/AtkinsonHyperlegible/AtkinsonHyperlegibleNext-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    src: url('../fonts/AtkinsonHyperlegible/AtkinsonHyperlegibleNext-SemiBoldItalic.woff2') format('woff2');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    src: url('../fonts/AtkinsonHyperlegible/AtkinsonHyperlegibleNext-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    src: url('../fonts/AtkinsonHyperlegible/AtkinsonHyperlegibleNext-BoldItalic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    src: url('../fonts/AtkinsonHyperlegible/AtkinsonHyperlegibleNext-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    src: url('../fonts/AtkinsonHyperlegible/AtkinsonHyperlegibleNext-ExtraBoldItalic.woff2') format('woff2');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}

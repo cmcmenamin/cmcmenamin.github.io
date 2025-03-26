@@ -1,0 +1,4 @@
+Always specify font-display: swap in your CSS to avoid invisible text during load
+Include fallback fonts in your CSS stack (e.g., serif, Georgia, etc.)
+Optimize your font subset to only include necessary glyphs—especially helpful for multilingual support
+
