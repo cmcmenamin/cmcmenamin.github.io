@@ -30,6 +30,7 @@ body {
     margin-right: auto;
     display: block;
     padding: 10px;
+    margin-top: 4rem;
 }
 
 .container {
@@ -69,6 +70,7 @@ footer {
     text-align: center;
     font-size: 4rem;
     margin-top: 1rem;
+    color: #555;
 }
 
 .headline {
