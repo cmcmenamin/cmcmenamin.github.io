@@ -3,7 +3,7 @@
     --text: #000000;
     --accent: #0066cc;
 }
-
+/*
 @media (prefers-color-scheme: dark) {
     :root {
         --bg: #121212;
@@ -11,7 +11,7 @@
         --accent: #66aaff;
     }
 }
-
+*/
 /* Base Reset */
 * {
     margin: 0;

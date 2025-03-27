@@ -1,0 +1,33 @@
+<svg width="1000" height="640" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .colour_a { fill: #555; }
+    .colour_b { fill: #ccc; }
+    text {
+      font-family: 'Libre Caslon Text', serif;
+      font-size: 160.5px;
+      font-weight: bold;
+      fill: #555;
+      text-anchor: middle;
+    }
+  </style>
+  <g transform="translate(324.5, 130)">
+    <!-- Row 1 -->
+    <circle cx="0"   cy="0"   r="40" class="colour_a" />
+    <circle cx="100" cy="0"   r="40" class="colour_b" />
+    <circle cx="251" cy="0"   r="40" class="colour_a" />
+    <circle cx="351" cy="0"   r="40" class="colour_b" />
+
+    <!-- Row 2 -->
+    <circle cx="0"   cy="100" r="40" class="colour_b" />
+    <circle cx="100" cy="100" r="40" class="colour_a" />
+    <circle cx="251" cy="100" r="40" class="colour_b" />
+    <circle cx="351" cy="100" r="40" class="colour_b" />
+
+    <!-- Row 3 -->
+    <circle cx="0"   cy="200" r="40" class="colour_a" />
+    <circle cx="100" cy="200" r="40" class="colour_b" />
+    <circle cx="251" cy="200" r="40" class="colour_b" />
+    <circle cx="351" cy="200" r="40" class="colour_b" />
+  </g>
+  <text x="500" y="550">OpenAccess</text>
+</svg>
