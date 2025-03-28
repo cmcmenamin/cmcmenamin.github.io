@@ -42,8 +42,9 @@ a {
 
 ol, ul {
     list-style: disc inside;
-    padding-left: 1.25rem; /* ensures spacing between bullet and text */
-  }
+    padding-left: 0.7rem; /* ensures spacing between bullet and text */
+    margin-left: 0;
+}
 
 :root {
     --bg: #f4f4f4;
