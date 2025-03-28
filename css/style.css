@@ -27,6 +27,15 @@ h6 {
     text-wrap: balance;
 }
 
+h1:not(:first-child),
+h2:not(:first-child),
+h3:not(:first-child),
+h4:not(:first-child),
+h5:not(:first-child),
+h6:not(:first-child) {
+    margin-top: 1.5rem;
+}
+
 a {
     color: inherit;
 }
@@ -37,8 +46,8 @@ ol, ul {
   }
 
 :root {
-    --bg: #ffffff;
-    --text: #000000;
+    --bg: #f4f4f4;
+    --text: #555555;
     --accent: #707070;
     font-size: 24px;
 }
@@ -82,7 +91,6 @@ html {
     font-family: 'Atkinson Hyperlegible', serif;
     font-weight: bold;
     font-size: 2rem;
-    padding-top: 1rem;
     text-wrap: balance;
 }
 
@@ -99,7 +107,7 @@ html {
 
 section, footer {
     border-top: 2px solid var(--accent);
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     margin: 0;
 }
 
@@ -107,28 +115,45 @@ section, footer {
     font-weight: 700;
 }
 
-.email-wrapper {
-    display: flex;
-    align-items: stretch;
-    gap: 0;
-}
 #email-display {
-    border: 1px solid;
-    padding: 0.25em 0.5em;
+    border: 1px solid var(--accent);
+    padding: 0.5rem 0.6rem;
+    margin: 0.5rem 0;
+    display: inline-block;
 }
 
 #copy-email-button {
-    padding: 0 0.4rem;
-    font-family: inherit;
+    display: block;
+    border: 1px solid var(--accent);
+    background-color: var(--text);
+    color: var(--bg);
+    padding: 0.4rem 0.5rem 0.25rem 0.5rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    text-align: center;
+    cursor: pointer;
     font-size: 1rem;
+    font-family: inherit;
 }
 
 #copy-email-feedback {
-    vertical-align: middle;
+    background-color: var(--text);
+    color: var(--bg);
 }
 
-p + p {
-    margin-top: 1em;
+#copy-email-feedback:not(:empty) {
+    padding: 0.4rem 0.5rem 0.25rem 0.5rem;
+    display: inline-block;
+}
+
+p + p,
+button + p,
+div + p,
+ul + p,
+ol + p,
+blockquote + p,
+section + p {
+    margin-top: 1rem;
 }
 
 footer {
