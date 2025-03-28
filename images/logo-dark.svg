@@ -1,24 +1,44 @@
-<svg width="441" height="300" xmlns="http://www.w3.org/2000/svg">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1000 640" xmlns="http://www.w3.org/2000/svg">
   <style>
-    .white { fill: #fff; }
-    .dark { fill: #666; }
+    :root {
+      --primary-color: #F0F0F0;
+      --secondary-color: #555555;
+    }
+    
+    .primary { fill: var(--primary-color); }
+    .secondary { fill: var(--secondary-color); }
+    .label {
+      font-family: 'Libre Caslon Text', serif;
+      font-size: 160.5px;
+      font-weight: bold;
+      fill: var(--primary-color);
+      text-anchor: middle;
+    }
   </style>
-
-  <!-- Row 1 -->
-  <circle cx="50"  cy="50"  r="40" class="white" />
-  <circle cx="150" cy="50"  r="40" class="dark" />
-  <circle cx="301" cy="50"  r="40" class="white" />
-  <circle cx="401" cy="50"  r="40" class="dark" />
-
-  <!-- Row 2 -->
-  <circle cx="50"  cy="150" r="40" class="dark" />
-  <circle cx="150" cy="150" r="40" class="white" />
-  <circle cx="301" cy="150" r="40" class="dark" />
-  <circle cx="401" cy="150" r="40" class="dark" />
-
-  <!-- Row 3 -->
-  <circle cx="50"  cy="250" r="40" class="white" />
-  <circle cx="150" cy="250" r="40" class="dark" />
-  <circle cx="301" cy="250" r="40" class="dark" />
-  <circle cx="401" cy="250" r="40" class="dark" />
+  <defs>
+    <circle id="primary-circle" r="40" class="primary"/>
+    <circle id="secondary-circle" r="40" class="secondary"/>
+  </defs>
+  <g transform="translate(324.5,130)">
+    <g transform="translate(0,0)">
+      <use href="#primary-circle"/>
+      <use href="#secondary-circle" transform="translate(100,0)"/>
+      <use href="#primary-circle" transform="translate(251,0)"/>
+      <use href="#secondary-circle" transform="translate(351,0)"/>
+    </g>
+    <g transform="translate(0,100)">
+      <use href="#secondary-circle"/>
+      <use href="#primary-circle" transform="translate(100,0)"/>
+      <use href="#secondary-circle" transform="translate(251,0)"/>
+      <use href="#secondary-circle" transform="translate(351,0)"/>
+    </g>
+    <g transform="translate(0,200)">
+      <use href="#primary-circle"/>
+      <use href="#secondary-circle" transform="translate(100,0)"/>
+      <use href="#secondary-circle" transform="translate(251,0)"/>
+      <use href="#secondary-circle" transform="translate(351,0)"/>
+    </g>
+  </g>
+  <text x="500" y="550" class="label">OpenAccess</text>
 </svg>
