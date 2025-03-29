@@ -134,6 +134,12 @@ footer {
   text-wrap: balance;
 }
 
+@media (max-width: 600px) {
+    .headline, .description {
+        text-align: left;
+    }
+}
+
 *:focus-visible {
   outline: 2px solid var(--focus-indicator);
   outline-offset: 2px;
