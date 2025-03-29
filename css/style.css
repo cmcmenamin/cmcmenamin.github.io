@@ -1,21 +1,66 @@
+/* ============================================
+   1. Reset & Box Model
+============================================ */
+
 *,
-*:before,
-*:after {
-    box-sizing: border-box;
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
+/* ============================================
+   2. Base & Elements
+============================================ */
+
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-base);
+  font-size: 24px;
+  line-height: 1.6;
+}
+
+:root {
+  --bg: #f4f4f4;
+  --text: #555555;
+  --accent: #707070;
+  --focus-indicator: #9B5DE5;
+  --font-base: 'Atkinson Hyperlegible', system-ui, sans-serif;
+  --font-serif: 'Libre Caslon Text', Georgia, serif;
+  --font-mono: 'Atkinson Hyperlegible Mono', 'Courier New', monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121212;
+    --text: #f5f5f5;
+    --accent: #707070;
+  }
+}
+
+body {
 }
 
 img {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+ol,
+ul {
+  list-style: disc inside;
+  padding-inline-start: 0.7rem;
+  margin-inline-start: 0;
 }
 
 h1,
@@ -24,7 +69,7 @@ h3,
 h4,
 h5,
 h6 {
-    text-wrap: balance;
+  text-wrap: balance;
 }
 
 h1:not(:first-child),
@@ -33,159 +78,8 @@ h3:not(:first-child),
 h4:not(:first-child),
 h5:not(:first-child),
 h6:not(:first-child) {
-    margin-top: 1.5rem;
+  margin-block-start: 1.5rem;
 }
-
-a {
-    color: inherit;
-}
-
-ol, ul {
-    list-style: disc inside;
-    padding-left: 0.7rem; /* ensures spacing between bullet and text */
-    margin-left: 0;
-}
-
-:root {
-    --bg: #f4f4f4;
-    --text: #555555;
-    --accent: #707070;
-    font-size: 24px;
-}
-
-#logo-image-dark {
-    display: none;
-    width: 400px;
-    margin: 2rem auto;
-}
-#logo-image-light {
-    display: block;
-    width: 400px;
-    margin: 2rem auto;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg: #121212;
-        --text: #f5f5f5;
-        --accent: #707070;
-    }
-
-    #logo-image-light { display: none; }
-    #logo-image-dark { display: block; }
-}
-
-html {
-    background-color: var(--bg);
-    color: var(--text);
-    font-family: 'Atkinson Hyperlegible', system-ui, sans-serif;
-    font-size: 1.3rem;
-    line-height: 1.6;
-}
-
-.container {
-    width: min(100% - 2rem, 60ch); /* 75ch (optimal readability width) or full width minus padding */
-    margin-inline: auto;           /* Modern shorthand to center horizontally */
-}
-
-.headline {
-    font-weight: bold;
-    font-size: 2rem;
-    text-wrap: balance;
-}
-
-.description {
-    margin-top: 1rem;
-    font-family: 'Atkinson Hyperlegible';
-    font-weight: 400;
-    font-size: 1.5rem;
-    text-wrap: balance;
-}
-
-.top-section {
-    text-align: center;
-}
-
-section, footer {
-    border-top: 2px solid var(--accent);
-    padding: 1.5rem 0;
-    margin: 0;
-}
-
-.bold {
-    font-weight: 700;
-}
-
-#email-display {
-    border: 1px solid var(--accent);
-    padding: 0.5rem 0.6rem;
-    margin: 0.5rem 0;
-    display: inline-block;
-}
-
-#copy-email-button {
-    display: block;
-    border: 1px solid var(--accent);
-    background-color: var(--text);
-    color: var(--bg);
-    padding: 0.4rem 0.5rem 0.25rem 0.5rem;
-    margin-top: 0.2rem;
-    margin-bottom: 0.2rem;
-    text-align: center;
-    cursor: pointer;
-    font-size: 1rem;
-    font-family: inherit;
-}
-
-#copy-email-feedback {
-    background-color: var(--text);
-    color: var(--bg);
-}
-
-#copy-email-feedback:not(:empty) {
-    padding: 0.4rem 0.5rem 0.25rem 0.5rem;
-    display: inline-block;
-}
-
-.e-117 { }
-.e-0 { display: none; }
-.e-173 { }
-.e-74 { display: none; }
-.e-163 { }
-.e-64 { display: none; }
-.e-126 { display: none; }
-.e-55 { display: none; }
-.e-78 { }
-.e-108 { display: none; }
-.e-114 { }
-.e-105 { display: none; }
-.e-106 { display: none; }
-.e-46 { }
-.e-85 { display: none; }
-.e-118 { display: none; }
-.e-102 { display: none; }
-.e-76 { display: none; }
-.e-67 { display: none; }
-.e-10 { }
-.e-178 { display: none; }
-.e-27 { }
-.e-140 { display: none; }
-.e-43 { display: none; }
-.e-146 { display: none; }
-.e-119 { }
-.e-32 { }
-.e-127 { }
-.e-59 { display: none; }
-.e-87 { display: none; }
-.e-63 { }
-.e-6 { }
-.e-36 { display: none; }
-.e-138 { }
-.e-131 { display: none; }
-.e-90 { display: none; }
-.e-91 { display: none; }
-.e-122 { display: none; }
-.e-116 { }
 
 p + p,
 button + p,
@@ -194,41 +88,200 @@ ul + p,
 ol + p,
 blockquote + p,
 section + p {
-    margin-top: 1rem;
+  margin-block-start: 1rem;
 }
 
+/* ============================================
+   3. Layout
+============================================ */
+
+.container {
+  width: min(100% - 2rem, 60ch);
+  margin-inline: auto;
+}
+
+main > section:first-child {
+  text-align: center;
+}
+
+section,
 footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+  border-block-start: 2px solid var(--accent);
+  padding-block: 1.5rem;
+  margin: 0;
+}
+
+/* ============================================
+   4. Typography & Utility
+============================================ */
+
+.bold {
+  font-weight: 700;
+}
+
+.headline {
+  font-family: var(--font-base);
+  font-size: 2rem;
+  font-weight: bold;
+  text-wrap: balance;
+}
+
+.description {
+  margin-block-start: 1rem;
+  font-size: 1.5rem;
+  font-family: var(--font-base);
+  font-weight: 400;
+  text-wrap: balance;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--focus-indicator);
+  outline-offset: 2px;
+}
+
+/* ============================================
+   5. Logo
+============================================ */
+
+.logo-image-dark,
+.logo-image-light {
+  width: 400px;
+  margin-block: 2rem;
+  margin-inline: auto;
+  display: block;
+}
+
+.logo-image-dark {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo-image-light {
+    display: none;
+  }
+
+  .logo-image-dark {
+    display: block;
+  }
+}
+
+/* ============================================
+   6. Email Copy Component
+============================================ */
+
+#email-display {
+  border: 1px solid var(--accent);
+  padding-block: 0.5rem;
+  padding-inline: 0.6rem;
+  margin-block: 0.5rem;
+  display: inline-block;
+  font-family: var(--font-mono);
+}
+
+#copy-email-button {
+  display: block;
+  border: 1px solid var(--accent);
+  background-color: var(--text);
+  color: var(--bg);
+  padding-block: 0.4rem 0.25rem;
+  padding-inline: 0.5rem;
+  margin-block: 0.2rem;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+#copy-email-feedback {
+  background-color: var(--text);
+  color: var(--bg);
+}
+
+#copy-email-feedback:not(:empty) {
+  padding-block: 0.4rem 0.25rem;
+  padding-inline: 0.5rem;
+  display: inline-block;
+}
+
+/* ============================================
+   7. Obfuscated Email Classes (DO NOT EDIT)
+============================================ */
+
+.e-117 {}
+.e-0 { display: none; }
+.e-173 {}
+.e-74 { display: none; }
+.e-163 {}
+.e-64 { display: none; }
+.e-126 { display: none; }
+.e-55 { display: none; }
+.e-78 {}
+.e-108 { display: none; }
+.e-114 {}
+.e-105 { display: none; }
+.e-106 { display: none; }
+.e-46 {}
+.e-85 { display: none; }
+.e-118 { display: none; }
+.e-102 { display: none; }
+.e-76 { display: none; }
+.e-67 { display: none; }
+.e-10 {}
+.e-178 { display: none; }
+.e-27 {}
+.e-140 { display: none; }
+.e-43 { display: none; }
+.e-146 { display: none; }
+.e-119 {}
+.e-32 {}
+.e-127 {}
+.e-59 { display: none; }
+.e-87 { display: none; }
+.e-63 {}
+.e-6 {}
+.e-36 { display: none; }
+.e-138 {}
+.e-131 { display: none; }
+.e-90 { display: none; }
+.e-91 { display: none; }
+.e-122 { display: none; }
+.e-116 {}
+
+/* ============================================
+   8. Footer
+============================================ */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 footer ol {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
 }
 
 footer li {
-    margin: 0;
+  margin: 0;
 }
 
-/* Mobile styles */
 @media (max-width: 600px) {
-    footer {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    footer span {
-        margin-top: 1rem;
-    }
+  footer span {
+    margin-block-start: 1rem;
+  }
 
-    footer ol {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
+  footer ol {
+    flex-direction: column;
+    row-gap: 0.5rem;
+  }
 }
